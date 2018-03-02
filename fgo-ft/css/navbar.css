@@ -1,7 +1,6 @@
 body{
     font-size: 14px;
-    background:RGB(150,150,150);
-    
+    background:RGB(150,150,150);    
 }
 
 .navbar {
@@ -53,9 +52,4 @@ body{
     padding: 15px 10px;    
     line-height: 20px;
     color: #777;
-}
-
-
-a:link{
-    text-decoration: none;
 }

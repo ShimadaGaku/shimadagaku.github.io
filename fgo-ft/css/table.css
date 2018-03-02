@@ -1,19 +1,17 @@
 ﻿body{
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "Lucida Grande", "PingFang TC", "蘋果儷中黑", "Apple LiGothic Medium", sans-serif;
-
 }
 
 table.tablesorter thead th{
     background: #01306B;
-color:D8E5F0;
+    color:D8E5F0;
 	cursor: pointer;
 }
 table.tablesorter {
-
        font-size: 0.9em;
-text-align: center;
+    text-align: center;
 }
-table{
+table,article{
    word-break: keep-all;
    white-space:nowrap;
 }
@@ -26,17 +24,17 @@ table.tablesorter thead th.tablesorter-header.tablesorter-headerDesc {
 
 table.tablesorter thead th.tablesorter-header.tablesorter-headerAsc {
     background: #473626;
-color:D1A076;
+    color:D1A076;
 }
 
 table.tablesorter tbody tr.odd td {
     border: 1px solid transparent;
-background-color: #F6F6F6;   
+    background-color: #F6F6F6;   
 }
 
 table.tablesorter tbody tr.even td {
     border: 1px solid transparent;
-background-color: #E9E9E9;  
+    background-color: #E9E9E9;  
 }
 
 img#cmdCard{
@@ -69,9 +67,9 @@ article#thanksFor{
 }
 
 div#thanksFor{
-        font-size: 30px;
-        font-weight:bolder;
-            padding: 15px 10px;                
+    font-size: 30px;
+    font-weight:bolder;
+    padding: 15px 10px;                
 }
 div.thanksFor-Screen{    
     padding:20px 100px 30px 80px;    
@@ -126,7 +124,7 @@ div#myLog{
 }
 
 input[type=button]{
-        margin: 10px 0px 0px 2px;
+    margin: 10px 0px 0px 2px;
     
 }
 
@@ -139,9 +137,8 @@ td {
 }
 
 input[type=text] {
- size:4;
- width:43px;
-
+     size:4;
+     width:43px;
     -webkit-appearance: textfield;
     background-color: white;
     -webkit-rtl-ordering: logical;
@@ -156,12 +153,12 @@ input[type=checkbox]:checked+label,select{
     color: #FFFFD8;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
     text-decoration: none;
- -webkit-user-select: none;
- -moz-user-select: none;
+     -webkit-user-select: none;
+     -moz-user-select: none;
 }
 
 input[type=checkbox]{
-display:none;
+    display:none;   
 }
 
 label,select,legend,input[type=button]{
@@ -169,8 +166,8 @@ label,select,legend,input[type=button]{
     padding: 8px 4px;
     font-size: 12px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
- -webkit-user-select: none;
- -moz-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 select{
@@ -178,8 +175,8 @@ select{
     padding: 7px 3px;
     font-size: 12px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
- -webkit-user-select: none;
- -moz-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
 }
 
 label,select{
@@ -187,7 +184,7 @@ label,select{
 }
 
 select{
-min-width:60px;
+    min-width:60px;
 }
 
 
@@ -202,12 +199,11 @@ div.input_text {
 input[type=text],div.input_text,legend,input[type=button]{
     background: #A67C09;
     color: #FFFFD8;
-
-border-style:none;
+    border-style:none;
 }
 
 label,legend,input[type=button]{
-cursor: pointer;
+    cursor: pointer;
 }
 
 label,input[type=button]#off_click{
