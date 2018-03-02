@@ -1,0 +1,42 @@
+<html lang="zh-tw">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel=stylesheet type="text/css" href="css/navbar.css">
+    <link rel=stylesheet type="text/css" href="css/table.css">
+    <title>Fate/GO 戰鬥數據列表</title>
+</head>
+
+<body>
+    <div class="navbar navbar-fix-top navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" onclick="toIndex();">FGO 戰鬥數據列表</a>
+                <a class="navbar-content" onclick="toNp();">寶具列表</a>
+                <a class="navbar-content" onclick="toCn();">指令列表</a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <div id='myArticle'></div>
+</body>
+
+</html>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="html/totalJs.js"></script>
+<script language="javascript">
+    window.history.pushState('','','');
+    function toNp() {
+        setNobleTable();
+    }
+
+    function toCn() {
+        setCommonTable();
+    }
+
+    function toIndex() {
+        setThanksTable();
+    }
+</script>

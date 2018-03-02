@@ -1,0 +1,221 @@
+﻿body{
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "Lucida Grande", "PingFang TC", "蘋果儷中黑", "Apple LiGothic Medium", sans-serif;
+
+}
+
+table.tablesorter thead th{
+    background: #01306B;
+color:D8E5F0;
+	cursor: pointer;
+}
+table.tablesorter {
+
+       font-size: 0.9em;
+text-align: center;
+}
+table{
+   word-break: keep-all;
+   white-space:nowrap;
+}
+
+table.tablesorter thead th.tablesorter-header.tablesorter-headerDesc {
+
+    background: #A67C09;
+    color: #FFFFD8;
+}
+
+table.tablesorter thead th.tablesorter-header.tablesorter-headerAsc {
+    background: #473626;
+color:D1A076;
+}
+
+table.tablesorter tbody tr.odd td {
+    border: 1px solid transparent;
+background-color: #F6F6F6;   
+}
+
+table.tablesorter tbody tr.even td {
+    border: 1px solid transparent;
+background-color: #E9E9E9;  
+}
+
+img#cmdCard{
+    height:114px;
+    cursor: pointer;
+}
+
+article#nobleTable{
+    background: #4f535b;
+    border: 1px solid #000000;
+    text-align: justify;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    position: relative;
+    min-width: -webkit-min-content;
+    max-width: -webkit-max-content;
+}
+
+article#thanksFor{ 
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    color: #777;
+    text-align: justify;
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    position: relative;
+    border-radius: 6px;
+}
+
+div#thanksFor{
+        font-size: 30px;
+        font-weight:bolder;
+            padding: 15px 10px;                
+}
+div.thanksFor-Screen{    
+    padding:20px 100px 30px 80px;    
+}
+
+a{
+    float: left;
+    padding: 10px 10px;    
+    line-height: 5px;
+    color: #777;
+    text-decoration:none;
+    cursor: pointer;
+}
+
+table#source{
+    width: 100%;
+}
+
+div#myArticle{
+    top: 50;
+    position: relative;    
+    right: 0;
+    left: 0;
+    border-width: 0 0 1px;
+}
+
+textarea.update-log{
+    font-size: 16px;
+    padding:20px 30px 20px 30px;    
+    margin: 10px auto 10px auto;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    color: #777;
+    text-align: justify;
+    width: 100%;
+    position: relative;
+    border-radius: 6px;
+}
+
+div#myLog{
+    margin: 10px auto 10px auto;
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    color: #777;
+    text-align: justify;
+    width: 100%;
+    max-width: 700px;
+    margin: 10px auto 10px auto;
+    padding: 5px;
+    position: relative;
+    border-radius: 6px;
+}
+
+input[type=button]{
+        margin: 10px 0px 0px 2px;
+    
+}
+
+fieldset{
+    max-width: -webkit-max-content;
+    min-width: -webkit-min-content;
+}
+td {
+    vertical-align:text-top;
+}
+
+input[type=text] {
+ size:4;
+ width:43px;
+
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+}
+
+
+input[type=checkbox]:checked+label,select{
+    background: #A67C09;
+    color: #FFFFD8;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+    text-decoration: none;
+ -webkit-user-select: none;
+ -moz-user-select: none;
+}
+
+input[type=checkbox]{
+display:none;
+}
+
+label,select,legend,input[type=button]{
+    display: block;
+    padding: 8px 4px;
+    font-size: 12px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+ -webkit-user-select: none;
+ -moz-user-select: none;
+}
+
+select{
+    display: block;
+    padding: 7px 3px;
+    font-size: 12px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+ -webkit-user-select: none;
+ -moz-user-select: none;
+}
+
+label,select{
+    text-align: center;
+}
+
+select{
+min-width:60px;
+}
+
+
+
+div.input_text {
+    display: block;
+    padding: 6px 4px;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+
+input[type=text],div.input_text,legend,input[type=button]{
+    background: #A67C09;
+    color: #FFFFD8;
+
+border-style:none;
+}
+
+label,legend,input[type=button]{
+cursor: pointer;
+}
+
+label,input[type=button]#off_click{
+    background: #473626;
+    color:D1A076;
+}
+
+
+
+
+
