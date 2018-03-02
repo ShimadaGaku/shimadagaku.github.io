@@ -1,5 +1,10 @@
 ﻿body{
+    font-size: 14px;
+    background:RGB(150,150,150);    
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, "Lucida Grande", "PingFang TC", "蘋果儷中黑", "Apple LiGothic Medium", sans-serif;
+    padding-top: 70px;
+    word-break: keep-all;
+    white-space:nowrap;
 }
 
 table.tablesorter thead th{
@@ -57,9 +62,8 @@ article#thanksFor{
     background-color: #f8f8f8;
     border-color: #e7e7e7;
     color: #777;
-    text-align: justify;
-    width: 100%;
-    max-width: 700px;
+    text-align: justify;   
+    width:700px;
     margin: 10px auto 10px auto;
     padding: 5px;
     position: relative;
@@ -73,6 +77,7 @@ div#thanksFor{
 }
 div.thanksFor-Screen{    
     padding:20px 100px 30px 80px;    
+    width:700px;
 }
 
 a{
@@ -89,7 +94,7 @@ table#source{
 }
 
 div#myArticle{
-    top: 50;
+
     position: relative;    
     right: 0;
     left: 0;
@@ -110,13 +115,12 @@ textarea.update-log{
 }
 
 div#myLog{
+    width:700px;
     margin: 10px auto 10px auto;
     background-color: #f8f8f8;
     border-color: #e7e7e7;
     color: #777;
     text-align: justify;
-    width: 100%;
-    max-width: 700px;
     margin: 10px auto 10px auto;
     padding: 5px;
     position: relative;

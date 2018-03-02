@@ -1,12 +1,8 @@
-body{
-    font-size: 14px;
-    background:RGB(150,150,150);    
-}
-
 .navbar {
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
+    max-height: 50px;
 }
 
 .navbar-fix-top{
