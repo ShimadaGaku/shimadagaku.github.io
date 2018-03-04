@@ -640,42 +640,6 @@ function cmdNpDamage(svt_cmd, enemy, cmdSite, npAtkRate) {
     return result;
 }
 
-// 應該改成透過數字查表決定特攻範圍
-function getSpAtkUp(mySvt, myEmy) {
-    let buff_arr = mySvt['buff']['spAtkUp'];
-    let emyType = myEmy['individuality'];
-    let result = 0;
-    //showIndividuality(myEmy);
-    /*
-    for (key1 in buff_arr) {
-        let buff_arr2 = buff_arr[key1];        
-        for (key2 in buff_arr2) {
-            //log(buff_arr2[key2]);
-            let eft_detail_arr = buff_arr2[key2]['effectDetail'];
-            if(eft_detail_arr==undefined)continue;
-            for(key3 in eft_detail_arr){
-                let eft_arr = eft_detail_arr[key3]['effect'];
-                for(key4 in eft_arr){
-                    let eft = eft_arr[key4];
-                    if(eft!=="spAtkUp")continue;
-                    let rate = eft_detail_arr[key3]['rate'];
-                    //log();
-                }
-            }
-            //log(eft_detail);
-            
-            let spAtkType = superAtkList[buff_arr2[key2]['type']];
-            let rate = buff_arr2[key2]['rate'];
-            if (spAtkType !== undefined) {
-                let goalType = emyType[spAtkType];
-                if (goalType !== undefined || mySvt.isEnforceSp == 1) result += Number(rate);
-            }
-            
-        }
-    }    
-    */
-    return result;
-}
 // 處理寶具特攻問題
 function getNpSpAtkUp(mySvt, myEmy) {    
     let myNp = mySvt["noblePhantasm"][mySvt["isNPEX"]];
@@ -727,37 +691,3 @@ function getNpHpSpAtkUp(mySvt) {
     
     return result;
 }
-
-/*
-    2、寶具傷害計算公式
-ATK×攻擊補正×寶具倍率×[卡牌傷害倍率×(1+卡牌BUFF)]×職階補正×職階相性補正×陣營相性補正×亂數補正×(1+攻擊力BUFF-敵方防禦力BUFF)×(1+特攻威力BUFF-敵方特防威力BUFF+寶具威力BUFF)×寶具特攻+(固定傷害BUFF-敵方固定傷害BUFF)
-*/
-
-
-
-
-/*
-    ATK×
-    攻击补正×
-    [卡牌伤害倍率×位置加成×(1+卡牌BUFF)+首位加成]×
-    
-    职阶补正×职阶相性补正×阵营相性补正×乱数补正×
-    (1+攻击力BUFF—敌方防御力BUFF)×
-    (1+特攻威力BUFF+暴击威力BUFF)×暴击补正×EX攻击奖励 
-    +(固定伤害BUFF—敌方固定伤害BUFF) + ATK×Buster Chain加成
-    */
-
-// 攻擊補正 0.23
-// 卡牌傷害倍率 B1.5 A1.0 Q0.8
-// 位置加成 1 1.2 1.4 EX1
-// 顏色BUFF
-// 首位加成 B 0.5 else 0
-// Class補正
-// Class相性補正    
-// 相性補正
-// 陣營補正 天地人星獸
-// 亂數補正 0.9~1.10
-
-// 暴擊補正 2.0
-// EX獎勵 2.0 or 同色3.5
-// 含禮裝ATK×2.0

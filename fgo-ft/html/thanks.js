@@ -6,7 +6,10 @@
         let data = new Array();
         
         data.push('<div  id="myLog"><textarea class="update-log" rows="5" readonly="">');
-        let myStr = '2018-03-01\n';
+        let myStr = '';
+        myStr += '2018-03-04\n';
+        myStr += '    -修正寶具傷害\n';
+        myStr += '2018-03-01\n';
         myStr += '    -技能強化活動後統一更新\n';
         data.push(myStr);
         data.push('</textarea></div>');
