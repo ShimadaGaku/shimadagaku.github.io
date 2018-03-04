@@ -529,8 +529,7 @@ function cmdNpDamage(svt_cmd, enemy, cmdSite, npAtkRate) {
             crt_rand
         ) *
         (1 + atk_up) *
-        (1 + sp_up) *
-        (1 + np_sp_up_buff) *
+        (1 + sp_up + np_sp_up_buff) *
         np_sp_up +
         fix_up;
         
