@@ -7,8 +7,11 @@
         
         data.push('<div  id="myLog"><textarea class="update-log" rows="5" readonly="">');
         let myStr = '';
+        myStr += '2018-03-06\n';
+        myStr += '    -更新第八次從者強化內容\n';
+        myStr += '    -修正技能施放效果\n';
         myStr += '2018-03-04\n';
-        myStr += '    -修正寶具傷害\n';
+        myStr += '    -修正寶具傷害公式\n';
         myStr += '2018-03-01\n';
         myStr += '    -技能強化活動後統一更新\n';
         data.push(myStr);
