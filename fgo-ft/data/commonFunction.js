@@ -110,8 +110,10 @@
                 let detail = eft_skill_arr[key2];
                 let type = detail['type'];  
                 if(type==undefined)continue;
+                if(type=='all')type=99999;
                 if(!mySvt.isEnforceSp&&type!==99999&&myEmy['individuality'][type]==undefined)continue;       
                 let rate = detail['rate'];
+                
                 if (buff[key] == undefined) {
                     buff[key] = Number(rate);                    
                 } else {
@@ -123,6 +125,6 @@
         buff['colorUp']['A']=(buff.artsUp==undefined)?buff['colorUp']['A']:buff['colorUp']['A']+buff.artsUp;
         buff['colorUp']['B']=(buff.busterUp==undefined)?buff['colorUp']['B']:buff['colorUp']['B']+buff.busterUp;
         buff['colorUp']['Q']=(buff.quickUp==undefined)?buff['colorUp']['Q']:buff['colorUp']['Q']+buff.quickUp;
-
+        
         return buff;
     }

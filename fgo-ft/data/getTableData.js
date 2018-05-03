@@ -10,11 +10,11 @@
         // 強制特攻
         mySvt['isEnforceSp'] = mySettle['isEnforceSp'];      
         mySvt['fixedBuff'] = mySettle['buff'];
-            mySvt['oc'] = Number(mySettle['oc']);
-            mySvt['npLv'] = mySettle['npLv'];
-            mySvt['isNPEX'] = mySettle['isNPEX'];
-            mySvt['svtLv']=(mySettle['svtLv']!==undefined&&mySettle['svtLv']>0)?mySettle['svtLv']:mySvt.rewardLv;
-            mySvt['atk'] = Number(mySettle['equipAtk'])+Number(mySettle['fufuAtk']) + Number(getAtk(no, mySvt['svtLv']));
+        mySvt['oc'] = Number(mySettle['oc']);
+        mySvt['npLv'] = mySettle['npLv'];
+        mySvt['isNPEX'] = mySettle['isNPEX'];
+        mySvt['svtLv']=(mySettle['svtLv']!==undefined&&mySettle['svtLv']>0)?mySettle['svtLv']:mySvt.rewardLv;
+        mySvt['atk'] = Number(mySettle['equipAtk'])+Number(mySettle['fufuAtk']) + Number(getAtk(no, mySvt['svtLv']));
         let my_isNp = mySettle['isNp'];
         let my_isUseSkill =mySettle['isUseSkill'];
         let my_isCri = mySettle['isCri'];

@@ -149,7 +149,7 @@ function cmdDamageCommon(svt_cmd, first_cmd_color, cmdSite, isBrave) {
         "Q": 0
     };
     let brave_dmg = 0;
-    if(crt_burst_dmg[isBrave]!==undefined)brave_dmg = crt_burst_dmg[isBrave];
+    if(crt_burst_dmg[isBrave]!==undefined&&cmd_color=='B')brave_dmg = crt_burst_dmg[isBrave];
 
 
     let damage =
@@ -391,6 +391,7 @@ function cmdNpRelease(svt_cmd, cmdSite, npNum) {
         let eft_arr = np_detail_arr2['effect'];        
         let skill_lv = (np_detail_arr2['rate'].isOC)?mySvt.oc:np_lv;        
         let rate = (np_detail_arr2['rate'][skill_lv]!==undefined)?np_detail_arr2['rate'][skill_lv]:np_detail_arr2['rate'][1];
+
         for (key2 in eft_arr) {
             let eft = eft_arr[key2];
             // 寶具特攻和HP特攻在寶具施放時處理
@@ -399,17 +400,17 @@ function cmdNpRelease(svt_cmd, cmdSite, npNum) {
                 result = getNpDmg(svt_cmd, goal, rate);
             } else {
                 if (tempBuff[eft] == undefined) tempBuff[eft] = [0];
-                                let eft_json = {
-                                    'rate':rate,
-                                    'lv':skill_lv,
-                                    'name':skill_lv,
-                                    'type_name':np_detail_arr2['rate']['type_name'],
-                                    'type':np_detail_arr2['rate']['type'],
-                                    'goal':goal,
-                                    'detail':myNp['effect'][key1],
-                                    'proto':myNp
-                                };       
-                    tempBuff[eft].push(eft_json);                
+                    let eft_json = {
+                        'rate':rate,
+                        'lv':skill_lv,
+                        'name':skill_lv,
+                        'type_name':np_detail_arr2['rate']['type_name'],
+                        'type':np_detail_arr2['rate']['type'],
+                        'goal':goal,
+                        'detail':myNp['effect'][key1],
+                        'proto':myNp
+                    };       
+                    tempBuff[eft].push(eft_json);
             }
         }
     }
