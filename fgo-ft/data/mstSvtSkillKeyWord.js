@@ -325,7 +325,8 @@ function getSkillRate(str, rate, lift) {
 
 let mstSkillGoal = {
     "自身除外": "except",
-    "我方單體": "我方單體",
+    //"我方單體": "我方單體",
+    "我方單體": "mySvt",
     "自身": "mySvt",
     "我方全體": "allSvt",
     "敵單體": "myEmy",

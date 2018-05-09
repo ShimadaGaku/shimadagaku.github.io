@@ -176,6 +176,7 @@
                     "isCri": my_isCri,
                     "isOverkill": my_isOverkill
                 }
+                if("EX"==cmd_color) cmd["isCri"] = 0;
                 let result = cmdDamageCommon(cmd, first_card, cmd_site, brave_color);
                 result.dmg=Math.round(result.dmg);
                 return result;
