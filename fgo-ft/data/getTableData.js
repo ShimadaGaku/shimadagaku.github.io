@@ -59,6 +59,8 @@
                     let skill_lv = mySkill_Lv[site];
                     let rate = (eft[key1].rate[skill_lv] !== undefined) ? eft[key1].rate[skill_lv] : eft[key1].rate[1];
                     // 土方技3
+                    //log(mySvt);
+                    //log(eft);
                     if (rate.toString().indexOf('%') !== -1) rate = Math.ceil(20 + 80 * (1 - mySvt.hpNow / mySvt.hp));
                     let eft_arr = eft[key1].effect;
                     let eft_type_name = eft[key1]['rate'].type;
@@ -177,6 +179,7 @@
                     "isOverkill": my_isOverkill
                 }
                 if("EX"==cmd_color) cmd["isCri"] = 0;
+                
                 let result = cmdDamageCommon(cmd, first_card, cmd_site, brave_color);
                 result.dmg=Math.round(result.dmg);
                 return result;

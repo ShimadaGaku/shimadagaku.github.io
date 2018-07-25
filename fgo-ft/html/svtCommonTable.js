@@ -183,8 +183,7 @@
                 let cno = i;
                 svtBaseSettle['cno'] = cno;
                 let mySvt = getSvt(cno);
-                /* log(mySvt);
-                 log(getSvt(cno));*/
+                //log(getSvt(cno));
                 //log(mySvt);
                 if (mySvt == undefined) continue;
                 let mySvtClass = numToClass[mySvt.classId];
@@ -236,16 +235,15 @@
 
         function getThead() {
             let data = new Array();
-            let mySvtData = getTableSmaple();
+            let mySvtData = getTableSmaple();            
             data.push('<tr>');
             data.push('<th>No.</th>');
             //data.push('<th>icon</th>');
             data.push('<th width=30px>Servant</th>');
             data.push('<th>職階</th>');
             data.push('<th>★</th>');
-            data.push('<th>指令卡</th>');
-            
-            for (arrti in mySvtData) {
+            data.push('<th>指令卡</th>');            
+            for (arrti in mySvtData) {                
                 let svtData = mySvtData[arrti];
                 for (let key1 in svtData) {
                     let jsn = svtData[key1];

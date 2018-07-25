@@ -176,11 +176,10 @@
         function getTbody() {
             let data = new Array();
             for (i in mstSvtCnoToId) {
-                //let arr = [163];for (key in arr) {let i = arr[key];
+                //let arr = [164];for (key in arr) {let i = arr[key];
                 let cno = i;
                 svtBaseSettle['cno'] = cno;
                 let mySvt = getSvt(cno);
-
                 
                 //log(mySvt);
                 if (mySvt == undefined) continue;

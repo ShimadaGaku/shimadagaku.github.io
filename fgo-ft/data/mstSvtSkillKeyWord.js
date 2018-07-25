@@ -251,12 +251,17 @@ function clearEffect(eft, lift) {
 
 function getSkillRate(str, rate, lift) {
     let a = {};
-    a = rate.split(/\//);
+    a = rate.split(/\//);   
+    //處理熱情迷唇技三
+    if (rate.indexOf('~') !== -1) {
+        for (key in a) {
+            a[key] = a[key].substring(a[key].indexOf('~')+1,a[key].length);
+        }
+    }
     //處理血量特攻
     if (rate.indexOf('*(') == -1) {
         //a['rate'] = rate.split(/\//);    
         let aa = {};
-
         for (key in a) {
             let num = Number(key) + 1;
             aa[num] = a;
@@ -273,7 +278,6 @@ function getSkillRate(str, rate, lift) {
             //處理望月
         if(isNaN(aa[1]))aa[1]=rate;
         }
-
         a = aa;
     } else {
         let aa = {0:20,1:rate};

@@ -7,6 +7,8 @@
         
         data.push('<div  id="myLog"><textarea class="update-log" rows="5" readonly="">');
         let myStr = '';
+        myStr += '2018-07-25\n';
+        myStr += '    -更新至瓦爾基里\n';
         myStr += '2018-03-23\n';
         myStr += '    -修正EX指令卡傷害\n';
         myStr += '2018-03-06\n';

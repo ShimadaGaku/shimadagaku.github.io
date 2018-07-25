@@ -49,6 +49,7 @@ function cmdDamage(svt_cmd_array) {
 function cmdDamageCommon(svt_cmd, first_cmd_color, cmdSite, isBrave) {
     // 我方從者
     let mySvt = svt_cmd["svt"][svt_cmd["svt_goal"]];    
+    
     // 敵方目標位置
     let emy_goal = svt_cmd["emy_goal"];
     let myEmy = svt_cmd["emy"][emy_goal];
@@ -178,6 +179,7 @@ function cmdDamageCommon(svt_cmd, first_cmd_color, cmdSite, isBrave) {
     damage = Math.round(damage * 100) / 100;
     if (damage < 0) damage = 0
     //ss+=damage;
+    
 
     //-- 計算NP --//
     let np_rate = mySvt["npRate"][cmd_color];
